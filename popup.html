@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button id="minimizeBtn" class="header-btn">-</button>
+      <button id="logoutBtn" class="header-btn" style="display: none;">Logout</button>
+    </div>
+    <div id="masterSetup" class="section welcome-section">
+      <h3>Set Credentials</h3>
+      <input type="text" id="usernameInput" placeholder="Username">
+      <input type="password" id="masterInput" placeholder="Master Password">
+      <button id="setMasterBtn">Set</button>
+      <p id="masterError" class="error"></p>
+    </div>
+    <div id="loginSection" class="section welcome-section">
+      <h3 id="loginUsername">Welcome back</h3>
+      <div class="input-group">
+        <input type="password" id="loginMasterInput" placeholder="Master Password">
+        <span id="passwordStatus" class="status-indicator"></span>
+      </div>
+    </div>
+    <div id="mainContent" class="section">
+      <p id="connectedUser">Connected as: <span id="usernameDisplay"></span></p>
+      <div class="tool-section">
+        <h3>Password Strength</h3>
+        <input type="text" id="checkInput" placeholder="Enter password">
+        <ul id="checkFeedback"></ul>
+      </div>
+      <div class="tool-section">
+        <h3>Generate Password</h3>
+        <p id="generatedPassword" class="output"></p>
+        <button id="generateBtn">Generate</button>
+        <button id="copyBtn" style="display: none;">Copy</button>
+      </div>
+      <div class="tool-section">
+        <h3>Save Password</h3>
+        <input type="text" id="siteInput" placeholder="Site">
+        <input type="text" id="saveInput" placeholder="Password">
+        <button id="saveBtn">Save</button>
+        <p id="saveResult" class="result"></p>
+      </div>
+      <div class="tool-section">
+        <h3>Saved Passwords</h3>
+        <button id="showPasswordsBtn">Show</button>
+      </div>
+    </div>
+    <div id="passwordsPage" class="section">
+      <div class="header">
+        <button id="backBtn" class="header-btn">Back</button>
+      </div>
+      <h3>Saved Passwords</h3>
+      <table id="passwordList" style="display: table;"></table>
+    </div>
+    <div id="logoutConfirm" class="confirm-dialog">
+      <p>Are you sure?</p>
+      <button id="confirmLogout">Yes</button>
+      <button id="cancelLogout">No</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
