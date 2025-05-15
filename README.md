@@ -15,7 +15,7 @@ A lightweight, secure Chrome extension to manage your passwords with ease. Store
 - **View Passwords:** Check saved credentials under "Saved Passwords."
 - **Generate:** Create secure passwords with one click.
 
-## Privacy (TO-DO)
+## TO-DO Privacy
 Your data stays on your device. Read our [Privacy Policy](https://yourusername.github.io/password-manager-privacy/policy.md) for details.
 
 ## TO-DO features
@@ -24,6 +24,6 @@ Your data stays on your device. Read our [Privacy Policy](https://yourusername.g
 - **Ads:** Display ads every hour of inactivity, removable with a $0.50 one-time purchase.
   - Steps: Implement ad logic in `popup.js`, integrate Chrome Web Store payments.
 - **Buy Me a Coffee:** Encourage donations via a button or prompt.
-  - Steps: Add a "Support Us" button in `mainContent` linking to `https://www.buymeacoffee.com/yourusername`
+  - Steps: Add a "Support Us" button in `mainContent` linking to `https://www.buymeacoffee.com/ksexasa`
 
-## License (TO-DO)
+## TO-DO License
